@@ -1,0 +1,29 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+
+@font-face {
+  font-family: 'PixelFont';
+  font-style: italic;
+  font-weight: 700;
+  src: url(assets/fonts/Nunito-Regular.ttf) format('TrueType');
+}
+body {
+  margin: 0;
+  font-family: 'PixelFont', 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
