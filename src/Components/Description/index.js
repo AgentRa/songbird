@@ -1,11 +1,11 @@
 import React from "react";
-import AudioPlayer from "react-h5-audio-player";
 import "./index.scss"
+import Player from "../../UI/Player";
 
 const Description = props => {
 
   return (
-    <div>
+    <div className="description">
       <div>
         <div className="image"></div>
         <div>
@@ -13,7 +13,7 @@ const Description = props => {
           <hr/>
           <h4>Grus grus</h4>
           <hr/>
-          <AudioPlayer/>
+          <Player/>
         </div>
       </div>
       <p>Журавли прикольные</p>

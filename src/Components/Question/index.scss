@@ -1,11 +1,16 @@
 .question {
+  margin: 10px 0;
   display: flex;
   justify-content: space-between;
+  background-color: #303030;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.53);
   &__image {
     &_anonym {
-      margin-top: 20px;
+      border-radius: 10px;
       width: 240px;
-      height: 240px;
+      height: 190px;
       background-image: url("../../assets/imgs/anonymbird.png");
     }
   }
@@ -16,7 +21,7 @@
     align-items: flex-start;
     padding-left: 100px;
     hr {
-      width: calc(100% - 240px);
+      width: calc(100%);
       margin: 0;
     }
   }

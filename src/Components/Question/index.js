@@ -1,6 +1,7 @@
 import React from "react";
 import './index.scss'
-import AudioPlayer from "react-h5-audio-player";
+import Player from "../../UI/Player";
+
 
 const Question = props => {
 
@@ -10,10 +11,7 @@ const Question = props => {
       <div className="question__info">
         <p>******</p>
         <hr/>
-        <AudioPlayer
-          src="https://www.xeno-canto.org/sounds/uploaded/UTLQZLKDQX/XC308330-House%20Crow.mp3"
-          onPlay={e => console.log("onPlay")}
-        />
+        <Player/>
       </div>
 
     </div>
