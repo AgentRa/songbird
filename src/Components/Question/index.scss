@@ -1,0 +1,23 @@
+.question {
+  display: flex;
+  justify-content: space-between;
+  &__image {
+    &_anonym {
+      margin-top: 20px;
+      width: 240px;
+      height: 240px;
+      background-image: url("../../assets/imgs/anonymbird.png");
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 240px);
+    align-items: flex-start;
+    padding-left: 100px;
+    hr {
+      width: calc(100% - 240px);
+      margin: 0;
+    }
+  }
+}

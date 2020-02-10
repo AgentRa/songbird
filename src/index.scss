@@ -26,4 +26,7 @@ code {
   text-align: center;
   display: flex;
   flex-direction: column;
+  &__answers{
+    display: flex;
+  }
 }

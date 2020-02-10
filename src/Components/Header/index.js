@@ -11,14 +11,14 @@ const Header = props => {
       </div>
       <nav>
         <div className="nav-wrapper">
-          <div className="col s12 blue lighten-2">
-            <div className="breadcrumb">Разминка</div>
-            <div className="breadcrumb">Воробьиные</div>
-            <div className="breadcrumb">Лесные птицы</div>
-            <div className="breadcrumb">Певчие птицы</div>
-            <div className="breadcrumb">Хищные птицы</div>
-            <div className="breadcrumb">Морские птицы</div>
-          </div>
+          <ul className="col s12 blue lighten-2">
+            <li className="breadcrumb">Разминка</li>
+            <li className="breadcrumb">Воробьиные</li>
+            <li className="breadcrumb">Лесные птицы</li>
+            <li className="breadcrumb">Певчие птицы</li>
+            <li className="breadcrumb">Хищные птицы</li>
+            <li className="breadcrumb">Морские птицы</li>
+          </ul>
         </div>
       </nav>
     </div>
