@@ -7,10 +7,13 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.53);
   &__image {
+    width: 240px;
+    height: 190px;
+    border-radius: 10px;
     &_anonym {
-      border-radius: 10px;
       width: 240px;
       height: 190px;
+      border-radius: 10px;
       background-image: url("../../assets/imgs/anonymbird.png");
     }
   }

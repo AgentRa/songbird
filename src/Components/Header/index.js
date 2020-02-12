@@ -1,26 +1,33 @@
 import React from "react";
 import "./index.scss";
 
-const Header = props => {
+const Header = ({score, activeQuestion}) => {
+
+  const itemList = [
+    "Разминка",
+    "Воробьиные",
+    "Лесные птицы",
+    "Певчие птицы",
+    "Хищные птицы",
+    "Морские птицы"
+  ]
 
   return (
     <div>
       <div className="upper">
         <div className="upper__logo"></div>
-        <p className="upper__score">Score: </p>
+        <p className="upper__score">Score: {score}</p>
       </div>
-      <nav>
-        <div className="nav-wrapper">
           <ul className="col s12 blue lighten-2">
-            <li className="breadcrumb">Разминка</li>
-            <li className="breadcrumb">Воробьиные</li>
-            <li className="breadcrumb">Лесные птицы</li>
-            <li className="breadcrumb">Певчие птицы</li>
-            <li className="breadcrumb">Хищные птицы</li>
-            <li className="breadcrumb">Морские птицы</li>
+            {itemList.map((item, idx) => {
+              return(<li
+                key={new Date() + idx}
+                className={
+                idx === activeQuestion
+                ? "breadcrumb actv"
+                : "breadcrumb"}>{item}</li>)
+            })}
           </ul>
-        </div>
-      </nav>
     </div>
   )
 }

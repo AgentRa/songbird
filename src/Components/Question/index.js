@@ -3,15 +3,29 @@ import './index.scss'
 import Player from "../../UI/Player";
 
 
-const Question = props => {
-
+const Question = ({isGuessed, bird}) => {
   return (
+
     <div className="question">
-      <div className="question__image_anonym"></div>
+
+      {
+        (!isGuessed
+          ? <div className="question__image_anonym"></div>
+          : <img className="question__image" src={bird.image} alt="bird"/>
+        )
+      }
+
       <div className="question__info">
-        <p>******</p>
+        {
+          (!isGuessed
+              ? <p>******</p>
+              : <p>{bird.name}</p>
+          )
+        }
         <hr/>
-        <Player/>
+        <Player
+          audio={bird.audio}
+        />
       </div>
 
     </div>

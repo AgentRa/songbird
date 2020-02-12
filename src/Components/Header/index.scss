@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.53);
   &__logo {
     width: 200px;
     height: 140px;
@@ -22,3 +21,23 @@
     cursor: pointer;
   }
 }
+
+.breadcrumb {
+  color: whitesmoke;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-align: justify-all;
+  &::before {
+    display: none;
+  }
+}
+
+.col {
+  border-radius: 10px;
+}
+
+.actv {
+  background-color: #006ca8;
+}
+
